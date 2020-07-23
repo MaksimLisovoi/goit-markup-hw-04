@@ -133,6 +133,8 @@ body {
 }
 
 .address-nav .link {
+  display: flex;
+  align-items: center;
   font-style: normal;
   color: var(--title-text-color);
   text-decoration: none;
@@ -141,6 +143,27 @@ body {
 .address-nav .link:focus {
   color: var(--accent-color);
 }
+.address-nav .link::before {
+  content: " ";
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin-right: 10px;
+}
+
+.link.envelope::before {
+  width: 16px;
+  height: 11.2px;
+  background-image: url(../images/icons/envelope.svg);
+}
+.link.mobile::before {
+  background-image: url(../images/icons/mobile.svg);
+  width: 10px;
+  height: 15px;
+}
+
+/* Address footer */
+
 .address-footer {
   color: var(--primary-white-color);
   font-style: normal;
@@ -176,6 +199,7 @@ body {
     url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: var(--title-text-color);
 }
 
 .hero {
@@ -220,6 +244,8 @@ body {
 
   color: var(--title-text-color);
 }
+
+flex
 /* Works */
 
 .work-title {
@@ -285,7 +311,7 @@ body {
   letter-spacing: 0.06em;
 }
 .button.primary.icon {
-  display: flex;
+  display: inline-flex;
   padding: 10px 28px 10px 29px;
   margin: 0;
 }
