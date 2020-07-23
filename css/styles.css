@@ -245,7 +245,34 @@ body {
   color: var(--title-text-color);
 }
 
-flex
+/* Features icons */
+
+.feature::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  /* outline: 1px solid tomato; */
+
+  background-color: var(--secondary-background-color);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 0px solid var(--secondary-background-color);
+  border-radius: 4px;
+}
+.icon-details::before {
+  background-image: url(../images/details_attention.svg);
+}
+.icon-punctuality::before {
+  background-image: url(../images/punctuality.svg);
+}
+.icon-planning::before {
+  background-image: url(../images/planning.svg);
+}
+.icon-technologies::before {
+  background-image: url(../images/technologies.svg);
+}
 /* Works */
 
 .work-title {
