@@ -316,6 +316,25 @@ body {
   padding: 30px 32px 24px 32px;
 }
 
+.sn-icon {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+}
+.insta {
+  background-image: url(../images/social_network/insta.svg);
+}
+.twitter {
+  background-image: url(../images/social_network/twitter.svg);
+}
+.fb {
+  background-image: url(../images/social_network/fb.svg);
+}
+.linkedin {
+  background-image: url(../images/social_network/linkedin.svg);
+}
 /* Clients */
 
 .client::before {
@@ -432,7 +451,41 @@ footer {
 .footer-form {
   margin-left: 94px;
 }
+.footer-link {
+  display: block;
+  margin-top: 9px;
+}
 
+.footer-add {
+  margin-top: 20px;
+}
+
+.sn-footer-icon {
+  display: block;
+
+  background: rgba(255, 255, 255, 0.1);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.sn-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.sn-footer-icon.insta {
+  background-image: url(../images/social_network/footer/instagram_1.svg);
+}
+.sn-footer-icon.twitter {
+  background-image: url(../images/social_network/footer/twitter_2.svg);
+}
+.sn-footer-icon.fb {
+  background-image: url(../images/social_network/footer/facebook_3.svg);
+}
+.sn-footer-icon.linkedin {
+  background-image: url(../images/social_network/footer/linkedin_4.svg);
+}
 /* Portfolio */
 
 .portfolio .link {
