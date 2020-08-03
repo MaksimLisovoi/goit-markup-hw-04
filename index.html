@@ -34,13 +34,19 @@
 
         <ul class="address-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link envelope"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="link address-icon">
+              <svg class="envelope">
+                <use href="./images/svg-sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link mobile"
-              >+38 096 111 11 11</a
+            <a href="tel:+380961111111" class="link address-icon"
+              ><svg class="mobile">
+                <use href="./images/svg-sprite.svg#icon-mobile"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -66,28 +72,51 @@
         <div class="container">
           <h2 class="heading visually-hidden">Особенности</h2>
           <ul class="feature-list list flex-container">
-            <li class="flex-second feature icon-details">
+            <li class="flex-second feature">
+              <div class="thumb">
+                <svg class="icon-features">
+                  <use
+                    href="./images/svg-sprite.svg#icon-details_attention"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="title">Внимание к деталям</h3>
               <p class="description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="flex-second feature icon-punctuality">
+            <li class="flex-second feature">
+              <div class="thumb">
+                <svg class="icon-features">
+                  <use href="./images/svg-sprite.svg#icon-punctuality"></use>
+                </svg>
+              </div>
+
               <h3 class="title">Пунктуальность</h3>
               <p class="description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="flex-second feature icon-planning">
+            <li class="flex-second feature">
+              <div class="thumb">
+                <svg class="icon-features">
+                  <use href="./images/svg-sprite.svg#icon-planning"></use>
+                </svg>
+              </div>
               <h3 class="title">Планирование</h3>
               <p class="description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="flex-second feature icon-technologies">
+            <li class="flex-second feature">
+              <div class="thumb">
+                <svg class="icon-features">
+                  <use href="./images/svg-sprite.svg#icon-technologies"></use>
+                </svg>
+              </div>
               <h3 class="title">Современные технологии</h3>
               <p class="description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -137,7 +166,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list flex-container">
-            <li class="flex-second">
+            <li class="flex-second shadow">
               <img
                 class="team-photo"
                 src="./images/our_team/product_designer.jpg"
@@ -179,7 +208,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-second">
+            <li class="flex-second shadow">
               <img
                 class="team-photo"
                 src="./images/our_team/frontend_developer.jpg"
@@ -221,7 +250,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-second">
+            <li class="flex-second shadow">
               <img
                 class="team-photo"
                 src="./images/our_team/marketing.jpg"
@@ -263,7 +292,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-second">
+            <li class="flex-second shadow">
               <img
                 class="team-photo"
                 src="./images/our_team/ui_designer.jpg"
@@ -423,7 +452,12 @@
         </div>
         <div class="footer-form">
           <p class="action-description">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <button type="button" class="button primary icon">Подписаться</button>
+          <button type="button" class="button primary">
+            Подписаться
+            <svg class="icon">
+              <use href="./images/svg-sprite.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
