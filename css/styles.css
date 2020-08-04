@@ -120,8 +120,23 @@ body {
   color: var(--accent-color);
 }
 .site-nav .link.current {
+  position: relative;
   color: var(--accent-color);
 }
+.link.current::after {
+  position: absolute;
+  display: block;
+  content: "";
+
+  bottom: 0;
+  left: 0;
+
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
 /* Address navigation */
 
 .address-nav {
@@ -516,6 +531,20 @@ footer {
 }
 
 /* Portfolio */
+
+/* Header-border */
+
+.portfolio-border {
+  position: relative;
+}
+
+.portfolio-border::after {
+  position: absolute;
+  width: 100%;
+
+  content: "";
+  border: 1px solid #ececec;
+}
 
 .portfolio .link {
   text-decoration: none;
